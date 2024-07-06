@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background: #497a8d;
+    color: #034138;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+}
+
+.container{
+    width: 70vw;
+    height: 80vh;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #034138;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 5px black;
+}
+
+.inputs{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-item{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input-item label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.inp{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inp span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.input-item input{
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #8fa5a250;
+    color: #034138;
+    text-align: right;
+}
+
+.input-item input::placeholder{
+    color: #034138;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.tips{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0 ;
+}
+
+.tips h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btns{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.tip-btn{
+    height: 45px;
+    padding: 10px;
+    width: 85px;
+    background-color: #034138;
+    border: none;
+    color: #1ff3a2;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tips button:hover{
+    background-color: #088370;
+    color: #01221d;
+}
+
+.active{
+    background-color:rgb(59, 5, 104);
+    color: white;
+    border: 5px solid #1ff3a2;
+}
+
+.people{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.people label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.people input{
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #8fa5a250;
+    color: #034138;
+    text-align: left;
+}
+
+.people input::placeholder{
+    color: #034138;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.submit{
+    width: 90%;
+    margin-top: 10px;
+    height: 45px;
+    padding: 10px;
+    background-color: #034138;
+    border: none;
+    color: #1ff3a2;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #088370;
+    color: #01221d;
+}
+
+.outputs{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 44, 28);
+    border-radius: 10px;
+}
+
+.output{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.output-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.heading{
+    color: white;
+}
+
+.value{
+    color: #05a568;
+    font-size: 30px;
+}
+
+.reset-btn{
+    border-radius: 5px;
+    color: rgb(5, 44, 28);
+    background-color: #05a568;
+    font-weight: bold;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+}

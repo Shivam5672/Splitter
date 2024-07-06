@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Spliiter</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Spli<br/>tter</h1>
+        <div class="container">
+            <div class="inputs">
+                <div class="input-item">
+                    <label for="bill">Bill</label>
+                    <div class="inp">
+                        <span class="dollar-symbol">$</span>
+                        <input id="bill" type="text" placeholder="Enter your Bill" onchange="billValue(this.value)">
+                    </div>
+                </div>
+                <div class="tips">
+                    <h2>Select Tip %</h2>
+                    <div class="btns">
+                        <button class="tip-btn" value="5" onclick="tipSelector(this)">5%</button>
+                        <button class="tip-btn" value="10" onclick="tipSelector(this)">10%</button>
+                        <button class="tip-btn" value="15" onclick="tipSelector(this)">15%</button>
+                        <button class="tip-btn" value="25" onclick="tipSelector(this)">25%</button>
+                        <button class="tip-btn" value="50" onclick="tipSelector(this)">50%</button>
+                        <button class="tip-btn custom-btn" onclick="customTip(this)">Custom</button>
+                    </div>
+                </div>
+                <div class="people">
+                    <label for="ppl">Number of People</label>
+                    <input id="ppl" type="text" placeholder="Enter the number of People" onchange="people(this.value)">
+                </div>
+                <button class="submit" onclick="calculate()">Submit</button>
+            </div>
+            <div class="outputs">
+                <div class="output">
+                    <div class="output-item">
+                        <div class="heading">
+                            <h3>Tip Amount</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="value">
+                            $<span class="tip-value">0</span>
+                        </div>
+                    </div>
+
+                    <div class="output-item">
+                        <div class="heading">
+                            <h3>Total</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="value">
+                            $<span class="total-value">0</span>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="reset-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
